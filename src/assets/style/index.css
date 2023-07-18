@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html ,body{
+  height: 100%;
+  background-color: #F3F6F9;
+
+}
+#root{
+  height: 100%;
+}
+
+@font-face {
+  font-family: "SF Pro Display Semibold";
+  src: url("src/assets/font-family/FontsFree-Net-SFProDisplay-Semibold.ttf");
+}
+:root {
+  --black: #4c5968;
+  --white: #ffffff;
+  --gray: #AEB8C4;
+  --pink: #EE225D;
+  --green: #1EC070;
+}
+.text-gray{
+  color: var(--gray);
+}
+body {
+  font-family: "SF Pro Display Semibold";
+  font-size: 16px;
+  color: #4c5968;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a:not(.link-styles) {
+  text-decoration: none;
+}
+
+input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+input:hover,
+input:focus {
+  outline: none;
+}
+h1 {
+  color: var(--black);
+  font-size: 1.8rem;
+}
+h2 {
+  padding: 1rem 0;
+}
+.text-center {
+  text-align: center;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
+.mainBody{
+  background-color: #F3F6F9;
+  padding: 30px 15px 100px 15px;
+  margin-bottom: 15px;
+ 
+}
+.flexBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

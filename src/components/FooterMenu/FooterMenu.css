@@ -1,0 +1,19 @@
+.footerMenu{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--white);
+    z-index: 998;
+    padding: 20px 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footerIcons{
+    fill: #aeb8c4;
+    cursor: pointer;
+}
+.footerIcons:hover{
+    fill: #4C5968;
+}

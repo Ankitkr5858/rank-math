@@ -1,0 +1,73 @@
+.graphSection {
+  margin: 15px 0;
+}
+
+.graphNavigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  margin-bottom: 15px;
+}
+
+.graphNavigation li {
+  color: var(--gray);
+  padding: 6px 12px;
+  border-radius: 30px;
+}
+
+.graphNavigation li.active {
+  background-color: #aeb8c4;
+  color: var(--white);
+}
+
+.graphWrapper {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 12px;
+}
+
+.lowandhigh {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px;
+  color: var(--gray);
+}
+
+.point {
+  position: relative;
+  padding-left: 20px;
+}
+
+.point::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 8px;
+  width: 8px;
+  background-color: var(--pink);
+  border-radius: 50%;
+}
+
+.green::before {
+  background-color: green;
+}
+
+@media (min-width: 400px) {
+  .graphNavigation li {
+    padding: 6px 24px;
+  }
+
+  .lowandhigh {
+    padding: 30px 24px 20px 24px;
+  }
+
+  .point::before {
+    height: 10px;
+    width: 10px;
+  }
+}
